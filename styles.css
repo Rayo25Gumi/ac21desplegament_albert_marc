@@ -1,5 +1,100 @@
 body {
     margin: 0;
-    padding: 0;
+    padding: 20px;
     font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #667eea;
+    margin-bottom: 25px;
+}
+
+#formulario-tareas {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#formulario-tareas input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+#formulario-tareas input:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+#formulario-tareas button {
+    padding: 12px 25px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#formulario-tareas button:hover {
+    background: #764ba2;
+}
+
+#lista-tareas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tarea {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.tarea button {
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.tarea button:hover {
+    background: #ff5252;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    #formulario-tareas {
+        flex-direction: column;
+    }
+
+    #formulario-tareas button {
+        width: 100%;
+    }
 }
