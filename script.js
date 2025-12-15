@@ -30,3 +30,8 @@ formulario.addEventListener('submit', function(e) {
     listaTareas.appendChild(nuevaTarea);
     input.value = '';
 });
+
+const botonBorrarTodo = document.getElementById('borrartodo');
+botonBorrarTodo.addEventListener('click', function() {
+    listaTareas.innerHTML = '';
+});
