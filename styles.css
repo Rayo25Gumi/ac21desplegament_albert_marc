@@ -85,6 +85,33 @@ h1 {
     background: #ff5252;
 }
 
+#borrartodo {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#borrartodo:hover {
+    background: #ff5252;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+}
+
 @media (max-width: 600px) {
     body {
         padding: 10px;
